@@ -31,10 +31,6 @@ public class placeController implements Initializable {
     public void setLabel(Place place) {
         pName.setText(place.getName());
         pType.setText(place.getPlType());
-        pFigure.setText(String.join(",", place.getPlFigures()));
-        pFestival.setText(String.join(",", place.getPlFestivals()));
-        pEvent.setText(String.join(",", place.getPlEvents()));
-        pGovernments.setText(String.join(",", place.getPlGovernments()));
         pDes.setText(place.getDescription());
     }
 

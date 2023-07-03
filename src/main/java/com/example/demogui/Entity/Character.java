@@ -7,7 +7,7 @@ import java.util.List;
 public class Character extends Entity {
     private String cBirth;
     private String cDeath;
-    private String cGovernment;
+    private List<String> cGovernment;
     private List<String> cRelatives;
 
     private List<String> cFestivals;
@@ -16,7 +16,7 @@ public class Character extends Entity {
         super(name, description);
     }
 
-    public Character(String name, String description, String cBirth, String cDeath, String cGovernment, List<String> cRelatives, List<String> cFestivals, List<String> cPlaces) {
+    public Character(String name, String description, String cBirth, String cDeath, List<String> cGovernment, List<String> cRelatives, List<String> cFestivals, List<String> cPlaces) {
         super(name, description);
         this.cBirth = cBirth;
         this.cDeath = cDeath;
@@ -34,7 +34,7 @@ public class Character extends Entity {
         return cDeath;
     }
 
-    public String getcGovernment() {
+    public List<String> getcGovernment() {
         return cGovernment;
     }
 

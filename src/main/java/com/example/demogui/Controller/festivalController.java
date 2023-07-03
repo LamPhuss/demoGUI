@@ -31,10 +31,6 @@ public class festivalController implements Initializable {
     public void setLabel(Festival festival) {
         fName.setText(festival.getName());
         fDate.setText(festival.getfDate());
-        fPlace.setText(String.join(", ", festival.getfPlaces()));
-        fGov.setText(String.join(",",festival.getfGovernments()));
-        fFig.setText(String.join(", ", festival.getfFigures()));
-        fEvent.setText(String.join(", ", festival.getfEvents()));
         fDes.setText(festival.getDescription());
     }
 }

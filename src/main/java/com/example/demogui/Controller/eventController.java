@@ -27,7 +27,6 @@ public class eventController implements Initializable {
         eName.setText(event.getName());
         eDes.setText(event.getDescription());
         eTime.setText(event.getEvTime());
-        ePlace.setText(String.join(",",event.getEvPlace()));
 
     }
 

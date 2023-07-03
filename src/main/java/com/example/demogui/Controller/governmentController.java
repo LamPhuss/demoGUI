@@ -47,32 +47,10 @@ public class governmentController implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/demogui/mainScene.fxml"));
         Parent root = loader.load();
         mainController mainController = loader.getController();
-        /*
-        FXMLLoader loader = new FXMLLoader();
-        String fxmlPath = "/com/example/demogui/mainScene.fxml";
-        URL fxmlUrl = getClass().getResource(fxmlPath);
-        if (fxmlUrl == null) {
-            System.err.println("FXML file not found: " + fxmlPath);
-            // Xử lý lỗi ở đây (ví dụ: hiển thị thông báo lỗi cho người dùng)
-        } else {
-            // Tiếp tục xử lý sau khi load FXML thành công
-        }*/
         gName.setText(government.getName());
         gdFound.setText(government.getGovDateFounded());
         gdEnd.setText(government.getGovDateEnded());
         gType.setText(government.getGovType());
-        HBox hbox = new HBox();
-
-        for (String keyword : government.getGovFigures()) {
-            Hyperlink hyperlink = new Hyperlink(keyword);
-            mainController.setHyperLink(hyperlink);
-            hbox.getChildren().add(hyperlink);
-        }
-        gFigure.setGraphic(hbox);
-        //gFigure.setText(String.join(",",government.getGovFigures()));
-        gFes.setText(String.join(",",government.getGovFestivals()));
-        gPlace.setText(String.join(",",government.getGovPlaces()));
-        gEvent.setText(String.join(",",government.getGovEvents()));
         gDes.setText(government.getDescription());
     }
 

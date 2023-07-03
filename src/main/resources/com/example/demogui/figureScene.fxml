@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane  prefHeight="649.0" prefWidth="636.0" visible="true" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demogui.Controller.characterController">
+<AnchorPane prefHeight="649.0" prefWidth="636.0" visible="true" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demogui.Controller.characterController">
     <children>
+        <ImageView fitHeight="649.0" fitWidth="636.0" pickOnBounds="true" preserveRatio="false">
+            <image>
+                <Image url="@../demogui/background4pane.jpg" />
+            </image>
+        </ImageView>
         <Label fx:id="chrName" layoutX="247.0" layoutY="187.0" prefHeight="40.0" prefWidth="143.0" text="Tên nhân vật ">
             <font>
                 <Font size="19.0" />
@@ -35,7 +42,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="chrGov" layoutX="321.0" layoutY="327.0" prefHeight="21.0" prefWidth="315.0" text="government">
+      <Label fx:id="chrGov" layoutX="321.0" layoutY="327.0" prefHeight="21.0" prefWidth="308.0">
          <font>
             <Font size="15.0" />
          </font>
@@ -45,7 +52,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="chrRel" layoutX="321.0" layoutY="364.0" prefHeight="21.0" prefWidth="315.0" text="relatives">
+      <Label fx:id="chrRel" layoutX="321.0" layoutY="364.0" prefHeight="21.0" prefWidth="308.0">
          <font>
             <Font size="15.0" />
          </font>
@@ -55,7 +62,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="chrFes" layoutX="321.0" layoutY="398.0" prefHeight="21.0" prefWidth="315.0" text="festivals">
+      <Label fx:id="chrFes" layoutX="321.0" layoutY="398.0" prefHeight="21.0" prefWidth="308.0">
          <font>
             <Font size="15.0" />
          </font>
@@ -65,7 +72,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="chrPlace" layoutX="321.0" layoutY="435.0" prefHeight="21.0" prefWidth="315.0" text="places">
+      <Label fx:id="chrPlace" layoutX="321.0" layoutY="435.0" prefHeight="21.0" prefWidth="308.0">
          <font>
             <Font size="15.0" />
          </font>

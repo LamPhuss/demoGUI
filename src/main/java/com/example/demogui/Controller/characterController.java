@@ -35,10 +35,6 @@ public class characterController implements Initializable {
         chrName.setText(character.getName());
         chBirth.setText(character.getcBirth());
         chrDeath.setText(character.getcDeath());
-        chrGov.setText(character.getcGovernment());
-        chrRel.setText(String.join(",",character.getcRelatives()));
-        chrFes.setText(String.join(",", character.getcFestivals()));
-        chrPlace.setText(String.join(",", character.getcPlaces()));
         chrDes.setText(character.getDescription());
     }
 
